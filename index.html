@@ -61,15 +61,15 @@
                 dim: mixColor(brightMode.dim, warmMode.dim, factor),
                 shadow: `rgba(${Math.round(255 * (1 - factor) + 255 * factor)}, ${Math.round(255 * (1 - factor) + 213 * factor)}, ${Math.round(255 * (1 - factor) + 128 * factor)}, 0.7)`
             };
-            flickerBox.style.boxShadow = `0px 0px 15px ${currentMode.shadow}`;
+            flickerBox.style.boxShadow = `0px 0px 30px ${currentMode.shadow}, 0 0 60px ${currentMode.shadow}, 0 0 90px ${currentMode.shadow}`;
         }
 
         alphaBtn.addEventListener('click', () => startFlicker(10));
         gammaBtn.addEventListener('click', () => startFlicker(40));
         modeSlider.addEventListener('input', (e) => updateMode(e.target.value));
 
-        // Start in Alpha Mode by default
-        startFlicker(10);
+        // Start in Gamma Mode by default
+        startFlicker(40);
     </script>
 </body>
 </html>
