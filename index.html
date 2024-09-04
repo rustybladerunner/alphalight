@@ -4,65 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visual Stimulation: Alpha & Gamma Modes</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: #1c1c1c;
-            background-image: url('https://www.transparenttextures.com/patterns/batthern.png');
-            font-family: Arial, sans-serif;
-            color: white;
-        }
-        #flicker-box {
-            width: 90vw;
-            height: 70vh;
-            background-color: #ffffff;
-            transition: background-color 0.1s;
-            border-radius: 15px;
-            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7);
-            border: 2px solid #2a2a2a;
-        }
-        #controls {
-            margin-top: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        button {
-            margin: 10px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
-            color: white;
-        }
-        #alpha-btn {
-            background-color: #ff7f50; /* Coral color for Alpha */
-        }
-        #alpha-btn:hover {
-            background-color: #ff4500; /* Darker coral on hover */
-        }
-        #gamma-btn {
-            background-color: #1e90ff; /* Dodger blue for Gamma */
-        }
-        #gamma-btn:hover {
-            background-color: #1c86ee; /* Darker blue on hover */
-        }
-        #mode-slider {
-            width: 300px;
-            margin-top: 20px;
-        }
-        label {
-            margin-top: 10px;
-            font-size: 16px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="flicker-box"></div>
